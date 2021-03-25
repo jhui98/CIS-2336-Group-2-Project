@@ -1,0 +1,18 @@
+.t01{
+    text-align: center;
+    table-layout: fixed;
+    margin: auto;   
+    width: 100%;
+}
+
+#nav01{
+    font-size: x-large;
+}
+
+#title{
+    font-size: 48;
+}
+
+#nav02{
+    font-size: x-large;
+}
