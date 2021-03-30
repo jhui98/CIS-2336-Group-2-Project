@@ -1,8 +1,11 @@
 .header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     text-align: center;
     table-layout: fixed;
-    margin: auto;   
-    width: 100%;
+    background-color: aqua;
 }
 
 .t01{
@@ -30,4 +33,5 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: aqua;
 }
