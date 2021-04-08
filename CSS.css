@@ -2,8 +2,29 @@ html{
     height:98.5%;
 }
 
-a:visited{
+a, a:visited{
     color:rgb(211, 239, 255);
+    text-shadow: 0 0 10px black;
+}
+
+
+h1, h2{
+    text-shadow: 0 0 10px black;
+}
+
+ol{
+    list-style:none;
+    counter-reset: item;
+}
+
+li{
+    counter-increment: item;
+}
+
+li:before{
+    content: counter(item) ". ";
+    text-shadow: 0 0 10px black;
+    font-weight: bold;
 }
 
 body{
@@ -13,6 +34,7 @@ body{
     font-family:Helvetica;
     color:white;
     background-color: rgb(99, 99, 99);
+    text-shadow: 0 0 4px black;
 }
 
 .header{
@@ -37,6 +59,7 @@ body{
 
 #title{
     font-size: 48;
+    text-shadow: 0 0 20px black;
 }
 
 #nav02{
