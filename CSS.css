@@ -39,5 +39,6 @@ body{
     margin-top:auto;
     width: 100%;
     text-align: center;
+    table-layout: fixed;
     background-color: aqua;
 }
