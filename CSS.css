@@ -8,10 +8,6 @@ body{
     flex-direction:column;
 }
 
-tr{
-    
-}
-
 .header{
     position: fixed;
     width: 99%;
