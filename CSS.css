@@ -2,11 +2,17 @@ html{
     height:98.5%;
 }
 
+a:visited{
+    color:rgb(211, 239, 255);
+}
+
 body{
     min-height:100%;
     display:flex;
     flex-direction:column;
     font-family:Helvetica;
+    color:white;
+    background-color: rgb(99, 99, 99);
 }
 
 .header{
@@ -14,7 +20,7 @@ body{
     width: 99%;
     text-align: center;
     table-layout: fixed;
-    background-color: aqua;
+    background-color: darkblue;
     border-radius:50px;
 }
 
@@ -42,6 +48,6 @@ body{
     width: 100%;
     text-align: center;
     table-layout: fixed;
-    background-color: aqua;
+    background-color: darkblue;
     border-radius:50px;
 }
