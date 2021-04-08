@@ -14,6 +14,7 @@ body{
     text-align: center;
     table-layout: fixed;
     background-color: aqua;
+    border-radius:50px;
 }
 
 .t01{
@@ -41,4 +42,5 @@ body{
     text-align: center;
     table-layout: fixed;
     background-color: aqua;
+    border-radius:50px;
 }
