@@ -19,7 +19,6 @@ ol{
 
 li{
     counter-increment: item;
-    margin-top:5px;
 }
 
 ol li:before{
@@ -93,6 +92,10 @@ body{
 .gallery{
     height: 225;
     border-radius: 25%;
+}
+
+#references{
+    margin: auto;
 }
 
 .footer{
