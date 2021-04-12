@@ -76,6 +76,12 @@ body{
     table-layout: fixed;
     margin: auto;
 }
+
+.member{
+    height: 200;
+    border-radius: 50%;
+}
+
 #home_gallery{
     text-align: center;
     table-layout: fixed;
