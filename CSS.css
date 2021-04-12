@@ -19,6 +19,7 @@ ol{
 
 li{
     counter-increment: item;
+    margin-top:5px;
 }
 
 li:before{
