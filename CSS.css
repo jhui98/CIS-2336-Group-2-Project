@@ -17,7 +17,7 @@ ol{
     counter-reset: item;
 }
 
-ol li{
+li{
     counter-increment: item;
     margin-top:5px;
 }
