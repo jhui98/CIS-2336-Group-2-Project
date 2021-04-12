@@ -78,7 +78,8 @@ body{
 }
 
 .member{
-    height: 200;
+    height: 250;
+    width: 250;
     border-radius: 50%;
 }
 
