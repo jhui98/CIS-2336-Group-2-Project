@@ -17,12 +17,12 @@ ol{
     counter-reset: item;
 }
 
-li{
+ol li{
     counter-increment: item;
     margin-top:5px;
 }
 
-li:before{
+ol li:before{
     content: counter(item) ". ";
     text-shadow: 0 0 10px black;
     font-weight: bold;
