@@ -68,15 +68,23 @@ body{
 
 .picture{
     height: 400;
+    border-radius: 25%;
 }
 
+#members_gallery{
+    text-align: center;
+    table-layout: fixed;
+    margin: auto;
+}
 #home_gallery{
+    text-align: center;
     table-layout: fixed;
     margin: auto;
 }
 
 .gallery{
     height: 225;
+    border-radius: 25%;
 }
 
 .footer{
