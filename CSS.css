@@ -93,6 +93,7 @@ body{
 .gallery{
     height: 225;
     border-radius: 25%;
+    display: block;
 }
 
 #references{
