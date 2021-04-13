@@ -14,3 +14,6 @@ Kyle Cortez,
 Erfan Darehshoori,
 Hanh Dang,
 Jacob Hui
+
+
+When updating pages check that you are using the right size image (details in image folder)
