@@ -15,6 +15,7 @@ h1, h2{
 ol{
     list-style:none;
     counter-reset: item;
+    list-style-position: outside;
 }
 
 li{
@@ -105,4 +106,9 @@ body{
     table-layout: fixed;
     background-color: darkblue;
     border-radius:50px;
+}
+
+#desc{
+    width: 75%;
+    margin:auto;
 }
