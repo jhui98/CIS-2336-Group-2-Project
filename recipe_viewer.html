@@ -25,7 +25,7 @@
                 <tr>
                     <th>
                         <h1 class="filter_btn"  onclick="hide('breakfast')">-Breakfast-</h1>
-                        <table class="home_gallery" class="hide" id="breakfast">
+                        <table class="home_gallery" id="breakfast">
                             <tr> <!-- Copy recipe link from homepage into category -->
                                 <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
                             </tr>
@@ -35,7 +35,7 @@
                 <tr>
                     <th>
                         <h1 class="filter_btn" onclick="hide('lunch')">-Lunch-</h1>
-                        <table class="home_gallery" class="hide" id="lunch">
+                        <table class="home_gallery" id="lunch">
                             <tr> <!-- Copy recipe link from homepage into category -->
                                 <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
                             </tr>
@@ -45,7 +45,7 @@
                 <tr>
                     <th>
                         <h1 class="filter_btn" onclick="hide('dinner')">-Dinner-</h1>
-                        <table class="home_gallery" class="hide" id="dinner">
+                        <table class="home_gallery" id="dinner">
                             <tr> <!-- Copy recipe link from homepage into category -->
                                 <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
                             </tr>
@@ -55,7 +55,7 @@
                 <tr>
                     <th>
                         <h1 class="filter_btn" onclick="hide('dessert')">-Dessert-</h1>
-                        <table class="home_gallery" class="hide" id="dessert">
+                        <table class="home_gallery" id="dessert">
                             <tr> <!-- Copy recipe link from homepage into category -->
                                 <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
                             </tr>
@@ -76,17 +76,18 @@
 
         <script>
             // create var to save if seen or not
-            var see_breakfast = 'yes'
-            var see_lunch = 'yes'
-            var see_dinner = 'yes'
-            var see_dessert = 'yes'
-
-            // hide references at beginning
-            hideC = document.getElementsByClassName("hide");
-            for (var i=0; hideC.length; i++) {
-                document.getElementsByClassName("hide")[i].style.display = "none";
-            }
+            var see_breakfast = 'no'
+            var see_lunch = 'no'
+            var see_dinner = 'no'
+            var see_dessert = 'no'
             
+            // hide references at beginning
+            var hideC = document.getElementsByClassName("home_gallery");
+            var hideB = Array.from(hideC);
+            for (var i=0; i < hideC.length; i++) {
+                document.getElementsByClassName("home_gallery")[i].style.display = "none";
+            }
+
             // hide and show button functions
             function hide(i){
                 if (i=='breakfast'){
