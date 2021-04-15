@@ -1,6 +1,6 @@
 <!-- Recipe Viewer page -->
 <html>
-    <title> Recipie Viewer </title>
+    <title> Recipe Viewer </title>
     <head>
         <link rel="stylesheet" href="CSS.css">
     </head>
@@ -14,54 +14,56 @@
                 <th><!-- Spacing --></th>
             </tr>
         </table> 
-        <br> <!-- spacing for looks -->
-        <br> <!-- spacing for looks -->
-        <br> <!-- spacing for looks -->
-        <br> <!-- spacing for looks -->
-        <br> <!-- spacing for looks -->
-        <table class="filter">
-            <tr>
-                <th>
-                    <h1 class="filter_btn"  onclick="hide('breakfast')">-Breakfast-</h1>
-                    <table class="home_gallery" class="hide" id="breakfast">
-                        <tr> <!-- Copy recipe link from homepage into category -->
-                            <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1 class="filter_btn" onclick="hide('lunch')">-Lunch-</h1>
-                    <table class="home_gallery" class="hide" id="lunch">
-                        <tr> <!-- Copy recipe link from homepage into category -->
-                            <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1 class="filter_btn" onclick="hide('dinner')">-Dinner-</h1>
-                    <table class="home_gallery" class="hide" id="dinner">
-                        <tr> <!-- Copy recipe link from homepage into category -->
-                            <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1 class="filter_btn" onclick="hide('dessert')">-Dessert-</h1>
-                    <table class="home_gallery" class="hide" id="dessert">
-                        <tr> <!-- Copy recipe link from homepage into category -->
-                            <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-        </table>
-
+        <div>
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br>
+            <!-- spacing for looks -->
+            <table class="filter">
+                <tr>
+                    <th>
+                        <h1 class="filter_btn"  onclick="hide('breakfast')">-Breakfast-</h1>
+                        <table class="home_gallery" class="hide" id="breakfast">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('lunch')">-Lunch-</h1>
+                        <table class="home_gallery" class="hide" id="lunch">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('dinner')">-Dinner-</h1>
+                        <table class="home_gallery" class="hide" id="dinner">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('dessert')">-Dessert-</h1>
+                        <table class="home_gallery" class="hide" id="dessert">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </div>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
