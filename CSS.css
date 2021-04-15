@@ -87,8 +87,7 @@ body{
     border-radius: 50%;
 }
 
-#home_gallery{
-
+.home_gallery{
     text-align: center;
     table-layout: fixed;
     margin-top: 5%;
@@ -98,10 +97,17 @@ body{
 }
 
 .gallery{
+    text-align: center;
     height: 225;
     border-radius: 25%;
     display: block;
     box-shadow: 3px 3px 5px black; 
+}
+
+.filter{
+    text-align: center;
+    table-layout: fixed;
+    margin: auto;
 }
 
 .footer{
