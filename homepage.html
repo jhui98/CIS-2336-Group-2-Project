@@ -3,7 +3,6 @@
     <title> Homepage </title>
     <head>
         <link rel="stylesheet" href="CSS.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
     <body>
         <table class="header"> <!-- Header table so that we can reuse this -->
@@ -42,7 +41,15 @@
                 <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
             </tr>
         </table>
-        <iframe src="recipe_pages/zacharyarroyo_recipe.html" id="frame"></iframe>
+        <iframe src=" " onload="this.onload=null; this.src=getRandomPage();" id="rframe"></iframe>
+        <script>
+            function getRandomPage(){
+                var pages = ["BryanChavarria_recipe.html","CesarCortez_recipe.html","JacobHui_recipe.html","ZacharyArroyo_recipe.html"];
+                return "recipe_pages/"+ pages[Math.floor(Math.random() * pages.length)]; 
+                
+            }
+            document.getElementById("rframe").src = getRandomPage();
+        </script>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
