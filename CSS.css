@@ -85,9 +85,13 @@ body{
 }
 
 #home_gallery{
+
     text-align: center;
     table-layout: fixed;
-    margin: auto;
+    margin-top: 5%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2%
 }
 
 .gallery{
@@ -108,4 +112,10 @@ body{
 #desc{
     width: 75%;
     margin:auto;
+}
+
+#frame{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto 2%;
 }
