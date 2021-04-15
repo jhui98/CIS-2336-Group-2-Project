@@ -45,6 +45,7 @@ body{
     table-layout: fixed;
     background-color: darkblue;
     border-radius:50px;
+    box-shadow: 5px 5px 10px black; 
 }
 
 .t01{
@@ -70,6 +71,8 @@ body{
 .picture{
     height: 400;
     border-radius: 20%;
+    box-shadow: 3px 3px 10px black; 
+
 }
 
 #members_gallery{
@@ -98,6 +101,7 @@ body{
     height: 225;
     border-radius: 25%;
     display: block;
+    box-shadow: 3px 3px 5px black; 
 }
 
 .footer{
@@ -107,6 +111,7 @@ body{
     table-layout: fixed;
     background-color: darkblue;
     border-radius:50px;
+    box-shadow: 5px 5px 10px black; 
 }
 
 #desc{
