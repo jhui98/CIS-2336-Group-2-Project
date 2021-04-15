@@ -105,9 +105,15 @@ body{
 }
 
 .filter{
-    text-align: center;
-    table-layout: fixed;
     margin: auto;
+    width: 85%;
+}
+
+.filter_btn{
+    text-align: center;
+    background-color: darkblue;
+    border-radius:50px;
+    box-shadow: 5px 5px 10px black; 
 }
 
 .footer{
