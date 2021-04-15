@@ -14,53 +14,54 @@
                 <th><!-- Spacing --></th>
             </tr>
         </table> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <table class="filter">
             <tr>
                 <th>
-                    Breakfast
-                </th>
-                <th>
-                    Lunch 
-                </th>
-                <th>
-                    Dinner
-                </th>
-                <th>
-                    Dessert
+                    <h1 class="filter_btn"  onclick="hide('breakfast')">-Breakfast-</h1>
+                    <table class="home_gallery" class="hide" id="breakfast">
+                        <tr> <!-- Copy recipe link from homepage into category -->
+                            <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                        </tr>
+                    </table>
                 </th>
             </tr>
-        </table>
-
-        <table class="home_gallery">
             <tr>
-                <td></td>
-                <td></td>
-                <td>
-                    CIS 2336 - Group 2 Project
-                    <br>
-                    (Filler Para)
-                </td>
-                <td></td>
-                <td></td>
+                <th>
+                    <h1 class="filter_btn" onclick="hide('lunch')">-Lunch-</h1>
+                    <table class="home_gallery" class="hide" id="lunch">
+                        <tr> <!-- Copy recipe link from homepage into category -->
+                            <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
+                        </tr>
+                    </table>
+                </th>
             </tr>
-            <tr> <!-- Recipe Gallery -->
-                <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
-                <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
-                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+            <tr>
+                <th>
+                    <h1 class="filter_btn" onclick="hide('dinner')">-Dinner-</h1>
+                    <table class="home_gallery" class="hide" id="dinner">
+                        <tr> <!-- Copy recipe link from homepage into category -->
+                            <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
+                        </tr>
+                    </table>
+                </th>
             </tr>
-
-            <tr> <!-- Recipe Gallery -->
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+            <tr>
+                <th>
+                    <h1 class="filter_btn" onclick="hide('dessert')">-Dessert-</h1>
+                    <table class="home_gallery" class="hide" id="dessert">
+                        <tr> <!-- Copy recipe link from homepage into category -->
+                            <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                        </tr>
+                    </table>
+                </th>
             </tr>
         </table>
-
 
         <!-- Copy this for every page -->
         <table class="footer">
@@ -71,5 +72,63 @@
                 <td></td>
             </tr>
         </table>
+
+        <script>
+            // create var to save if seen or not
+            var see_breakfast = 'yes'
+            var see_lunch = 'yes'
+            var see_dinner = 'yes'
+            var see_dessert = 'yes'
+
+            // hide references at beginning
+            hideC = document.getElementsByClassName("hide");
+            for (var i=0; hideC.length; i++) {
+                document.getElementsByClassName("hide")[i].style.display = "none";
+            }
+            
+            // hide and show button functions
+            function hide(i){
+                if (i=='breakfast'){
+                    if (see_breakfast == 'yes'){
+                        see_breakfast = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_breakfast = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='lunch'){
+                    if (see_lunch == 'yes'){
+                        see_lunch = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_lunch = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='dinner'){
+                    if (see_dinner == 'yes'){
+                        see_dinner = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_dinner = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='dessert'){
+                    if (see_dessert == 'yes'){
+                        see_dessert = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_dessert = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
