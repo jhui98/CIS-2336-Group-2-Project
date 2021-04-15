@@ -31,15 +31,20 @@
             <tr>
                 <td>
                     Coding Resources 
-                    <ul>
+                    <button class="button" onclick="hide('r1')"> Hide </button>
+                    <button class="button" onclick="show('r1')"> Show </button>
+                    <ul id="r1" class="hide">
                         <li><a href="https://www.w3docs.com/snippets/javascript/how-to-check-a-webpage-is-loaded-inside-an-iframe-or-into-the-browser-window.html"> Check if iFrame Resource </a></li>
+                        <li><a href="https://www.w3schools.com/jsref/prop_style_display.asp"> JavaScript Display and Hide </a></li>
                     </ul>
                 </td>
             </tr>
             <tr>
                 <td>
                     Zachary Arroyo
-                    <ul>
+                    <button class="button" onclick="hide('r2')"> Hide </button>
+                    <button class="button" onclick="show('r2')"> Show </button>
+                    <ul id="r2" class="hide">
                         <li><a href="https://omnivorescookbook.com/spam-ramen/">Ramen Image Source</a></li>
                     </ul>
                 </td>
@@ -47,15 +52,19 @@
             <tr>
                 <td>
                     Jacob Hui
-                    <ul>
+                    <button class="button" onclick="hide('r3')"> Hide </button>
+                    <button class="button" onclick="show('r3')"> Show </button>
+                    <ul id="r3" class="hide">
                         <li><a href="https://www.ohlaliving.com/tasty-and-authentic-filipino-chicken-adobo-recipe"> Adobo Image Source </a></li>
                     </ul>
                 </td>
             </tr>
             <tr>
                 <td>
-                    Cesar Cortez 
-                    <ul>
+                    Cesar Cortez
+                    <button class="button" onclick="hide('r4')"> Hide </button>
+                    <button class="button" onclick="show('r4')"> Show </button> 
+                    <ul id="r4" class="hide">
                         <li><a href = "https://reneeatgreatpeace.com/blueberry-pancakes/"> Pancake Image Source</a> </li>
                         <li><a href = "https://pinchofyum.com/fluffiest-blueberry-pancakes"> Recipe Source</a> </li>
                     </ul>
@@ -64,7 +73,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r5')"> Hide </button>
+                    <button class="button" onclick="show('r5')"> Show </button>
+                    <ul  id="r5" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -72,7 +83,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r6')"> Hide </button>
+                    <button class="button" onclick="show('r6')"> Show </button>
+                    <ul id="r6" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -80,7 +93,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r7')"> Hide </button>
+                    <button class="button" onclick="show('r7')"> Show </button>
+                    <ul id="r7" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -88,7 +103,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r8')"> Hide </button>
+                    <button class="button" onclick="show('r8')"> Show </button>
+                    <ul id="r8" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -96,7 +113,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r9')"> Hide </button>
+                    <button class="button" onclick="show('r9')"> Show </button>
+                    <ul id="r9" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -104,7 +123,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r10')"> Hide </button>
+                    <button class="button" onclick="show('r10')"> Show </button>
+                    <ul id="r10" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -112,7 +133,9 @@
             <tr>
                 <td>
                     Name
-                    <ul>
+                    <button class="button" onclick="hide('r11')"> Hide </button>
+                    <button class="button" onclick="show('r11')"> Show </button>
+                    <ul id="r11" class="hide">
                         <li></li>
                     </ul>
                 </td>
@@ -130,5 +153,21 @@
                 <td></td>
             </tr>
         </table>
+
+        <script>
+            // hide references at beginning
+            hideC = document.getElementsByClassName("hide");
+            for (var i=0; hideC.length; i++) {
+                document.getElementsByClassName("hide")[i].style.display = "none";
+            }
+            
+            // hide and show buttons
+            function hide(i){
+                document.getElementById(i).style.display = "none";
+            }
+            function show(i){
+                document.getElementById(i).style.display = "block";
+            }
+        </script>
     </body>
 </html>
