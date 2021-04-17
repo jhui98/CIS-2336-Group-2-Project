@@ -1,1 +1,92 @@
+<!-- Personal recipie page Bryan Chavarria -->
 
+<html>
+    <title> Bánh mì </title>
+    <head>
+        <title> Bánh mì </title>
+        <link rel="stylesheet" href="../CSS.css">
+    </head>
+    <body>
+        <table class="header"> <!-- Header table so that we can reuse this -->
+            <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
+                <th id="nav01"> <a href="../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
+                <th id="title"> Bánh mì </th> <!-- Name of recipe -->
+                <th id="nav02"> <a href="../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
+            </tr>
+        </table>
+        
+        <table class="t01">
+            <tr> <!-- Recipe Title-->
+                <td>
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <h1> Filipino Chicken Adobo by Jacob Hui </h1> <!-- Name of recipe -->
+                </td>
+            </tr>
+            
+            <tr> <!-- Recipe Instructions and Image-->
+                <td>
+                    <h2>Ingredients</h2>
+                    <ul style="text-align: left;">
+                        <li> 1/2 (12 inch) French baguette </li>
+                        <li> 10 oz. pork tenderloin </li>
+                        <li> 2 tablespoons mayonnaise </li>
+                        <li> 1/2 small jalapeno pepper </li>
+                        <li> 2 tsp soy sauce - 1 tsp Asian sesame oil </li>
+                        <li> 1/2 cup cilantro sprigs </li>
+                        <li> 1/2 tsp onion powder </li>
+                        <li> 1/2 tsp garlic powder </li>
+                        <li> 1/4 tsp freshly ground black pepper </li>
+                        <li> 1/2 tsp Sriracha sauce </li>
+                        <li> 1/2 tsp Hosin sauce </li>
+                    </ul>
+                </td>
+                <!-- Image of food here -->
+                <td><img src="../images/bahnmi_template.jpg" class="picture"></td>
+            </tr>
+
+            <tr> <!-- Paragraph about the recipe -->
+                <td>
+                    <h2>Instructions</h2>
+                    <ol style="text-align: left;">
+                        <li> Unpack pork </li>
+                        <li> Heat the oil in a large skillet over medium heat. </li>
+                        <li> Add onion and saute until soft, about 3 minutes. </li>
+                        <li> Add pork, soy sauce, sesame oil, hosin sauce, onion and garlic powders, and pepper. </li>
+                        <li> Cook, stirring often, until browned, about 5 - 6 minutes.  </li>
+                        <li> Remove from heat and set aside. </li>
+                        <li> While the pork rests, lets move onto making the sandwhich!
+                        <li> Turn your broiler on high. </li>
+                        <li> Place the baguettes, cut side up, on a baking sheet, and place under the broiler for about 2 minutes until lightly browned and toasted. Keep an eye on them! Don't let them burn! </li>
+                        <li> On the bottom portion of each baguette: stack the Banh Mi with  </li>
+                        <li> Cilantro, Seasoned Pork, Drizzle of Soy, Pickled Jalapenos, Drizzle of Chile Oil.  </li>
+                        <li> Add the top portion of each baguette. Cut in half, if desired, and serve. </li>
+                    </ol>
+                </td>
+                <td> <div id="desc"> Bánh Mì literally means “bread” in Vietnamese; it refers to the French baguette bread that is used to make this Vietnamese sandwich.
+                      This sandwich is popular around the world, especially in countries with a high concentration of Vietnamese people, from France, Canada, United Kingdom to the United States. </div></td>
+            </tr>
+        </table>
+
+        <!-- Copy this for every page -->
+        <table class="footer">
+            <tr height=60px>
+                <td></td>
+                <td><h3><a href="../members.html">Members</a></h3></td>
+                <td><h3><a href="../references.html">References</a></h3></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
+    </body>
+</html>
