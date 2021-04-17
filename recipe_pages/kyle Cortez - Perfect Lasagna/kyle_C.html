@@ -1,0 +1,185 @@
+<!-- Do not edit for your personal page, just copy and add your stuff in another file -->
+<!-- This is going to be for everyones personal recipie page -->
+
+<html>
+<title> Perfect Lasagna Page Template </title>
+<head>
+    <link rel="stylesheet" href="../../CSS.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table class="header"> <!-- Header table so that we can reuse this -->
+    <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
+        <th id="nav01"> <a href="../../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
+        <th id="title"> Perfect Lasagna </th> <!-- Name of recipe -->
+        <th id="nav02"> <a href="../../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
+    </tr>
+</table>
+
+<table class="t01">
+    <tr> <!-- Recipe Title-->
+        <td>
+            <br> <!-- Spacing for looks -->
+            <br> <!-- Spacing for looks -->
+            <br> <!-- Spacing for looks -->
+            <br> <!-- Spacing for looks -->
+            <br> <!-- Spacing for looks -->
+            <h1> Perfect Lasagna </h1> <!-- Name of recipe -->
+        </td>
+    </tr>
+
+    <tr> <!-- Recipe Instructions and Image-->
+        <td>
+            <h2>Ingredients</h2>
+            <ol style="text-align: left;">
+                <li> <input type = "checkbox"> 1 pound sweet Italian sausage </li>
+                <br>
+                <li> <input type = "checkbox"> 3/4 pound lean ground beef</li>
+                <br>
+                <li> <input type = "checkbox"> 1/2 cup minced onion </li>
+                <br>
+                <li> <input type = "checkbox"> 2 cloves garlic, crushed</li>
+                <br>
+                <li> <input type = "checkbox"> 1 (28 ounce) can crushed tomatoes</li>
+                <br>
+                <li> <input type = "checkbox"> 2 (6 ounce) cans tomato paste</li>
+                <br>
+                <li> <input type = "checkbox"> 2 (6.5 ounce) cans canned tomato sauce</li>
+                <br>
+                <li> <input type = "checkbox"> 1/2 cup water</li>
+                <br>
+                <li> <input type = "checkbox"> 2 tablespoons white sugar</li>
+                <br>
+                <li> <input type = "checkbox"> 1 1/2 teaspoons dried basil leaves</li>
+                <br>
+                <li> <input type = "checkbox"> 1/2 teaspoon fennel seeds</li>
+                <br>
+                <li> <input type = "checkbox"> 1 teaspoon Italian seasoning</li>
+                <br>
+                <li> <input type = "checkbox"> 1 1/2 teaspoons salt, divided, or to taste</li>
+                <br>
+                <li> <input type = "checkbox"> 1/4 teaspoon ground black pepper</li>
+                <br>
+                <li> <input type = "checkbox"> 4 tablespoons chopped fresh parsley</li>
+                <br>
+                <li> <input type = "checkbox"> 12 lasagna noodles</li>
+                <br>
+                <li> <input type = "checkbox"> 16 ounces ricotta cheese</li>
+                <br>
+                <li> <input type = "checkbox"> 1 egg</li>
+                <br>
+                <li> <input type = "checkbox"> 3/4 pound mozzarella cheese, sliced</li>
+                <br>
+                <li> <input type = "checkbox"> 3/4 cup grated Parmesan cheese</li>
+            </ol>
+        </td>
+        <!-- Image of food here -->
+        <td>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="las6.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="las1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Lasagna slice">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="las2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lasagna side">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="las3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lasagna slice">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="las4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Melted Cheese">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="las5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="las6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr> <!-- Instructins to make lasagna-->
+        <td>
+            <h2>Instructions</h2>
+            <ol style="text-align: left;">
+                <li> In a Dutch oven, cook sausage, ground beef, onion, and garlic over medium heat until well browned. Stir in crushed tomatoes, tomato paste, tomato sauce, and water. Season with sugar, basil, fennel seeds, Italian seasoning, 1 teaspoon salt, pepper, and 2 tablespoons parsley. Simmer, covered, for about 1 1/2 hours, stirring occasionally. </li>
+                <br>
+                <br>
+                <br>
+                <li> Bring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt. </li>
+                <br>
+                <br>
+                <br>
+                <li> Preheat oven to 375 degrees F (190 degrees C). </li>
+                <br>
+                <br>
+                <br>
+                <li> To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13-inch baking dish. Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture. Top with a third of mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese. Repeat layers, and top with remaining mozzarella and Parmesan cheese. Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese. </li>
+                <br>
+                <br>
+                <br>
+                <li> Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes. Cool for 15 minutes before serving. </li>
+            </ol>
+        </td>
+        <td> <div id="desc">A classic lasagna with a bit of a twist. Enjoy this nice recipe from allrecipes.com and don't forget to add some basil for extra flavor!!! </div></td>
+    </tr>
+</table>
+
+<!-- Copy this for every page -->
+<table class="footer">
+    <tr height=60px>
+        <td></td>
+        <td><h3><a href="../../members.html">Members</a></h3></td>
+        <td><h3><a href="../../references.html">References</a></h3></td>
+        <td></td>
+    </tr>
+</table>
+
+<script src = "new.js"></script>
+</body>
+</html>
