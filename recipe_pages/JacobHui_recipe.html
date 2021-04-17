@@ -1,15 +1,16 @@
 <!-- Personal recipie page Jacob Hui -->
 
 <html>
-    <title> Filipino Adobo </title>
+    <title> Filipino Chicken Adobo </title>
     <head>
+        <title> Filipino Chicken Adobo </title>
         <link rel="stylesheet" href="../CSS.css">
     </head>
     <body>
         <table class="header"> <!-- Header table so that we can reuse this -->
             <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
                 <th id="nav01"> <a href="../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
-                <th id="title"> Recipe </th> <!-- Name of recipe -->
+                <th id="title"> Filipino Chicken Adobo </th> <!-- Name of recipe -->
                 <th id="nav02"> <a href="../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
             </tr>
         </table>
@@ -22,46 +23,51 @@
                     <br> <!-- Spacing for looks -->
                     <br> <!-- Spacing for looks -->
                     <br> <!-- Spacing for looks -->
-                    <h1> Filipino Adobo </h1> <!-- Name of recipe -->
+                    <h1> Filipino Chicken Adobo by Jacob Hui </h1> <!-- Name of recipe -->
                 </td>
             </tr>
             
             <tr> <!-- Recipe Instructions and Image-->
                 <td>
                     <h2>Ingredients</h2>
-                    <ol style="text-align: left;">
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                    </ol>
+                    <ul style="text-align: left;">
+                        <li> 2 chicken thighs and 2 chicken legs (or just 4 chicken thighs) </li>
+                        <li> 3 minced large cloves of garlic </li>
+                        <li> 100ml rice wine vinegar </li>
+                        <li> 125ml soy sauce  </li>
+                        <li> 1 white onion sliced </li>
+                        <li> 5 bay leaves </li>
+                        <li> 1 tsp. brown sugar </li>
+                        <li> 1 tbsp. ground black pepper </li>
+                        <li> 300ml water </li>
+                        <li> 2 thinly sliced green onions to garnish (optional) </li>
+                    </ul>
                 </td>
                 <!-- Image of food here -->
-                <td> <img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="picture"> </td>
+                <td><img src="../images/adobo_template.jpg" class="picture"></td>
             </tr>
 
             <tr> <!-- Paragraph about the recipe -->
                 <td>
                     <h2>Instructions</h2>
                     <ol style="text-align: left;">
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
-                        <li> Fill </li>
+                        <li> Combine soy sauce, vineagr, garlic, pepper, bay leaves, and brown sugar and mix to create the marinade. </li>
+                        <li> In a bag add the chicken and the marinade making sure to mix and check that everything is covered. </li>
+                        <li> Marinade overnight or if in a rush at least 30 minutes. </li>
+                        <li> After marinading, in a dutch oven add enough oil to coat the bottom and get color on all sides of the chicken. </li>
+                        <li> At this stage you are not trying ot cook the chicken just get some color.  </li>
+                        <li> Once the chicken has color, remove it and set it aside. </li>
+                        <li> Add the remaining liquid form the marinade and the water. </li>
+                        <li> Bring everything up to a low simmer and add the chicken, making sure that the liquid covers the chicken. </li>
+                        <li> Cover and simmer for 15-20 min. </li>
+                        <li> (Optional) At this point you can begin to make some rice to complete the traditional meal, but it would still be great without it.  </li>
+                        <li> After the initial 15-20 min turn the chicken over and simmer for another 15-20 min or until the chicken is cooked through. </li>
+                        <li> Once it's finished you can serve out of the pot or you can remove the chicken and spoon it over when serving. </li>
+                        <li> If the sauce is too thin you can simmer to thicken or you can add water to make it thinner. </li>
+                        <li> Top with green onions, serve and enjoy! </li>
                     </ol>
                 </td>
-                <td> <div id="desc">Paragraph of text as a description (if you want) </div></td>
+                <td> <div id="desc"> Chicken Adobo is actually the national dish in the Philippines. It is a very easy and rich dish that is simmered in a soy sauce and vinegar based marinade. Adobo can be made with with chicken or pork, but I chose chicken for this recipe as it's my favorite, and it is also traditionally served over rice to soak up the rich sauce that the chicken is also marinated in. It's a super easy dish that instantly becomes a favorite for most. </div></td>
             </tr>
         </table>
 
@@ -74,5 +80,13 @@
                 <td></td>
             </tr>
         </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
     </body>
 </html>

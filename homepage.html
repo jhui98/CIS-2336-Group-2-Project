@@ -7,36 +7,49 @@
     <body>
         <table class="header"> <!-- Header table so that we can reuse this -->
             <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
-                <th id="nav01"> <a href=""> Fill </a>  </th> <!-- figure out what nav buttons we want -->
+                <th id="nav01"> <a href="recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
                 <th id="title"> Homepage </th> <!-- Name of recipe -->
-                <th id="nav02"> <a href="recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
+                <th id="nav02"> <a href="">  </a>  </th> <!-- spacing, but we can add a link -->
             </tr>
         </table>  
 
-        <table id="home_gallery">
+        <table class="home_gallery">
             <tr>
                 <td></td>
                 <td></td>
-                <td>Filler Para</td>
+                <td>
+                    CIS 2336 - Group 2 Project
+                    <br>
+                    (Filler Para)
+                </td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr> <!-- Recipie Gallery -->
-                <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
+            <tr> <!-- Recipe Gallery -->
+                <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
+                <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
+                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
             </tr>
-            <tr> <!-- Recipie Gallery -->
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
-                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery"></a></td>
+
+            <tr> <!-- Recipe Gallery -->
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
+                <td><a href="recipe_pages/recipe_page_template.html"><img src="https://static.wikia.nocookie.net/fortnite/images/7/7d/Apple.png/revision/latest?cb=20210113103055" class="gallery">Recipe Name</a></td>
             </tr>
         </table>
-
+        <iframe src=" " onload="this.onload=null; this.src=getRandomPage();" id="rframe"></iframe>
+        <script>
+            function getRandomPage(){
+                var pages = ["BryanChavarria_recipe.html","CesarCortez_recipe.html","JacobHui_recipe.html","ZacharyArroyo_recipe.html"];
+                return "recipe_pages/"+ pages[Math.floor(Math.random() * pages.length)]; 
+                
+            }
+            document.getElementById("rframe").src = getRandomPage();
+        </script>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>

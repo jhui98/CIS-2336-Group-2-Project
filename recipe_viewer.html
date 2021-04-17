@@ -1,6 +1,6 @@
 <!-- Recipe Viewer page -->
 <html>
-    <title> Recipie Viewer </title>
+    <title> Recipe Viewer </title>
     <head>
         <link rel="stylesheet" href="CSS.css">
     </head>
@@ -13,24 +13,57 @@
                 <th id="title"> Recipe Viewer </th> <!-- Name of recipe -->
                 <th><!-- Spacing --></th>
             </tr>
-        </table>     
-    
-        <table id="rfilter">
-            <tr>
-                <td>
-                    <br> <!-- Spacing for looks -->
-                    <br> <!-- Spacing for looks -->
-                    <br> <!-- Spacing for looks -->
-                    <br> <!-- Spacing for looks -->
-                    <br> <!-- Spacing for looks -->
-                    (Breakfast/Lunch/Dinner/Dessert Filter)
-                </td>
-            </tr>
-        </table>
-
-
-
-
+        </table> 
+        <div>
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br> <!-- spacing for looks -->
+            <br>
+            <!-- spacing for looks -->
+            <table class="filter">
+                <tr>
+                    <th>
+                        <h1 class="filter_btn"  onclick="hide('breakfast')">-Breakfast-</h1>
+                        <table class="home_gallery" id="breakfast">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('lunch')">-Lunch-</h1>
+                        <table class="home_gallery" id="lunch">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/ZacharyArroyo_recipe.html"><img src="images/ramentemplate.jpg" class="gallery" title="Ramen w/ SPAM, Egg(s) & Toppings"> Ramen </a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('dinner')">-Dinner-</h1>
+                        <table class="home_gallery" id="dinner">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/JacobHui_recipe.html"><img src="images/adobo_homepage.jpg" class="gallery"> Filipino Chicken Adobo </a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h1 class="filter_btn" onclick="hide('dessert')">-Dessert-</h1>
+                        <table class="home_gallery" id="dessert">
+                            <tr> <!-- Copy recipe link from homepage into category -->
+                                <td><a href="recipe_pages/CesarCortez_recipe.html"><img src="images/pancakes_template.jpg" class="gallery">Blueberry Pancakes</a></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+        </div>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
@@ -40,5 +73,64 @@
                 <td></td>
             </tr>
         </table>
+
+        <script>
+            // create var to save if seen or not
+            var see_breakfast = 'no'
+            var see_lunch = 'no'
+            var see_dinner = 'no'
+            var see_dessert = 'no'
+            
+            // hide references at beginning
+            var hideC = document.getElementsByClassName("home_gallery");
+            var hideB = Array.from(hideC);
+            for (var i=0; i < hideC.length; i++) {
+                document.getElementsByClassName("home_gallery")[i].style.display = "none";
+            }
+
+            // hide and show button functions
+            function hide(i){
+                if (i=='breakfast'){
+                    if (see_breakfast == 'yes'){
+                        see_breakfast = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_breakfast = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='lunch'){
+                    if (see_lunch == 'yes'){
+                        see_lunch = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_lunch = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='dinner'){
+                    if (see_dinner == 'yes'){
+                        see_dinner = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_dinner = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+                else if (i=='dessert'){
+                    if (see_dessert == 'yes'){
+                        see_dessert = 'no'
+                        document.getElementById(i).style.display = "none";
+                    }
+                    else {
+                        see_dessert = 'yes'
+                        document.getElementById(i).style.display = "initial";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
