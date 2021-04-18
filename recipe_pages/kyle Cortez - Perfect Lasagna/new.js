@@ -1,6 +1,14 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+if ( window.location !== window.parent.location ) {
+    document.getElementById("title").innerHTML = "Featured Recipe";
+    document.getElementById("nav01").style.display = "none";
+    document.getElementById("nav02").style.display = "none";
+    document.getElementsByClassName("footer")[0].style.display = "none";
+} 
+
+
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);

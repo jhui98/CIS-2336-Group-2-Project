@@ -54,7 +54,7 @@
                     </ul>
                 </td>
                 <!-- Image of food here -->
-                <td> <img src="images/Lasagna-Wide.jpg" class="picture"> </td>
+                <td> <img src="../images/Lasagna-Wide.jpg" class="picture"> </td>
             </tr>
 
             <tr> <!-- Paragraph about the recipe -->
@@ -72,7 +72,14 @@
                 <td> <div id="desc"> Nutrition Facts Per Serving: 448 calories; protein 29.7g; carbohydrates 36.5g; fat 21.3g; cholesterol 81.8mg; sodium 1400.4mg. </div></td>
             </tr>
         </table>
-
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
