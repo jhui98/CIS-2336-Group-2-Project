@@ -24,6 +24,14 @@
                     <br> <!-- Spacing for looks -->
                     <h1> Homemade Bluberry Pancakes by Cesar Cortez</h1> <!-- Name of recipe -->
                 </td>
+                <td id ="">
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <button onclick="showVideo()">Blueberry Pancakes Tutorial Video</button> 
+                </td>
             </tr>
             
             <tr> <!-- Recipe Instructions and Image-->
@@ -44,7 +52,17 @@
                     </ul>
                 </td>
                 <!-- Image of food here -->
-                <td> <img src="../images/pancakes_homepage.jpg" class="picture"> </td>
+                <td id = 'image'>
+                    <img src="../images/pancakes_homepage.jpg" class="picture"> 
+
+
+                    <script>
+                        function showVideo() {
+                        document.getElementById('image').innerHTML = "<iframe title='YouTube video player'   type=\'text/html\' width='640' height='390' src='https://www.youtube.com/embed/PYwzW6CCxJU' frameborder='0' allowFullScreen></iframe>"
+                        }
+            
+                      </script>
+                </td>
             </tr>
 
             <tr> <!-- Paragraph about the recipe -->
@@ -65,11 +83,14 @@
 
                     </ol>
                 </td>
-                <td> <div id="desc"> 
+                <td> 
+                    <div id="desc">
+                    
+                    <p1>
                     Pancakes are one of the fan favorites for breakfast around the world. But you know what's better thank plain old pancakes? Bluebbery Pancakes! 
-                    Not only are these pancakes already fluffy, but the blueberries add an extra "tang" that you have been missing with normal pancakes. This recipe
+                    Not only are these pancakes fluffy, but blueberries add an extra "tang" that you have been missing with normal pancakes. This recipe
                     will guide you on how YOU can make your very own, cost-effective, homemade, fluffy pancakes with little to no hassle.
-
+                    </p1>
                 </div></td>
             </tr>
         </table>
