@@ -38,6 +38,10 @@ body{
     text-shadow: 0 0 4px black;
 }
 
+iframe{
+    box-shadow: 1px 1px 20px black;
+}
+
 .header{
     position: fixed;
     width: 99%;

@@ -61,7 +61,7 @@
                 <td> <div id="desc"> Nutrition Facts Per Serving: 185 calories; protein 12.4g; carbohydrates 15g; fat 9.3g; cholesterol 34.8mg; sodium 930.8mg. </div></td>
             </tr>
         </table>
-
+        
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
@@ -71,5 +71,13 @@
                 <td></td>
             </tr>
         </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
     </body>
 </html>
