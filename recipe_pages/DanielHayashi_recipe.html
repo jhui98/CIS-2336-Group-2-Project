@@ -1,0 +1,126 @@
+<!-- Daniel Hayashi Recipe Page -->
+
+<html>
+    <title> Homemade Beef Empanadas </title> <!-- Update with your recipe name -->
+    <head>
+        <link rel="stylesheet" href="../CSS.css">
+    </head>
+    <body>
+        <table class="header"> <!-- Header table so that we can reuse this -->
+            <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
+                <th id="nav01"> <a href="../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
+                <th id="title"> Homemade Beef Empanadas </th> <!-- Name of recipe -->
+                <th id="nav02"> <a href="../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
+            </tr>
+        </table>
+        
+        <table class="t01">
+            <tr> <!-- Recipe Title-->
+                <td>
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <h1> Homemade Beef Empanadas by Daniel Hayashi</h1> <!-- Name of recipe -->
+                </td>
+                <td id ="">
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks --> 
+                </td>
+            </tr>
+            
+            <tr> <!-- Recipe Instructions and Image-->
+                <td>
+                    <h2>Ingredients for the Dough </h2>
+                    <ul style="text-align: left;">
+                        <li> 3 cups flour </li>
+                        <li> 1/2 tsp salt </li>
+                        <li> 1/2 cup cold butter cubed </li>
+                        <li> 1 egg  </li>
+                        <li> 3/4 cup cold water </li>
+		    <h2>Ingredients for the Filling </h2>
+                        <li> 2 tbsp olive oil </li>
+                        <li> 1 medium red onion </li>
+                        <li> 6 oz. boiled diced potato </li>
+                        <li> 1 tbsp tomato paste </li>
+                        <li> 1 jalapeno (fresh recommended) </li>
+                        <li> 12 oz. ground beef </li>
+			<li> 1/2 tsp salt </li>
+			<li> 1 tsp chili powder </li>
+			<li> 1 tsp paprika </li>
+			<li> 1/2 tsp cumin </li>
+			<li> 1/4 cup frozen peas </li>
+			<li> 1 tbsp chopped green onions </li>
+			<li> 1 tbsp chopped fresh parsley </li>
+                    </ul>
+                </td>
+                <!-- Image of food here -->
+                <td id = 'image'>
+                    <img src="../Web Project/easy-empanadas.jpg" class="picture"> 
+
+
+                    <script>
+                        function showVideo() {
+                        document.getElementById('image').innerHTML = "<iframe title='YouTube video player'   type=\'text/html\' width='640' height='390' src='https://www.youtube.com/embed/PYwzW6CCxJU' frameborder='0' allowFullScreen></iframe>"
+                        }
+            
+                      </script>
+                </td>
+            </tr>
+
+            <tr> <!-- Paragraph about the recipe -->
+                <td>
+                    <h2>Instructions for the Dough</h2>
+                    <ol style="text-align: left;">
+                        <li> Add flour, butter, and salt to a food processor fitted with a blade attachment. Pulse a few times until the butter is the size of peas. </li>
+                        <li> Add egg and cold water to the food processor. Pulse just until ball of dough forms. </li>
+                        <li> Form the dough into a flat round disk and wrap in plastic wrap. Refrigerate for at least 1 hour. </li>
+                    <h2>Instructions for the Filling </h2>
+			<li> Meanwhile you can get started on your filling. Heat olive oil in a large skillet over medium high heat. Add in onion and jalapeno and saute for 2-3 minutes or until softened and golden brown. </li>
+			<li> Add ground beef and brown until no longer pink, 4-5 minutes.
+                        <li> Add in salt, chili powder, paprika and cumin. </li>
+			<li> Stir in tomato paste. Sauté for an additional 2 minutes.. </li>
+			<li> Remove from heat and allow to cool slightly. Add in frozen peas, boiled potato, fresh parsley, and green onion. </li>
+			<li> Roll out dough to ¼ inch thickness. Cut into circles about 5 inches in diameter using a ring cutter or small bowl. Alternatively divide into 12 small balls of dough and roll into individual circles. </li>
+			<li> Place filling (about ¼ cup) on each circle and fold in half, crimp the edges with a fork. </li>
+			<li> Add oil to a deep pan or pot so that it reaches 1 inch in depth. Heat oil to between 350 and 375 degrees. </li>
+			<li> Fry in batches, 3 at a time, 2-3 minutes per side or until golden brown. </li>
+			<li> Serve immediately with salsa or sour cream for dipping! </li>
+                    </ol>
+                </td>
+                <td> 
+                    <div id="desc">
+                    
+                    <p1>
+                    The word empanada comes from the verb "empanar," which means "to wrap" in Spanish. 
+		Empanadas are thought to have originated in Galicia, Spain. The first mention of this dish was in a Catalan cookbook, published in 1520, which talks about empanadas filled with seafood. 
+		Empanadas are very popular all over Latin America, the Caribbean, Spain, and Portugal. 
+		Argentinian empanadas are the most popular in the Western hemisphere of the world. 	They are usually filled with a ground beef mixture and are baked or fried. Hard-boiled eggs, raisins, and olives incorporated into the beef mixture are also staples of South American empanadas. 
+                    </p1>
+                </div></td>
+            </tr>
+        </table>
+
+        <!-- Copy this for every page -->
+        <table class="footer">
+            <tr height=60px>
+                <td></td>
+                <td><h3><a href="../members.html">Members</a></h3></td>
+                <td><h3><a href="../references.html">References</a></h3></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
+    </body>
+</html>
