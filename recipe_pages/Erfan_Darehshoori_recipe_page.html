@@ -2,7 +2,7 @@
 <!-- This is going to be for everyones personal recipie page -->
 
 <html>
-    <title> Best Homemade Lasagna </title> <!-- Update with your recipe name -->
+    <title> Best Homemade Spaghetti </title> <!-- Update with your recipe name -->
     <head>
         <link rel="stylesheet" href="../CSS.css">
     </head>
@@ -10,7 +10,7 @@
         <table class="header"> <!-- Header table so that we can reuse this -->
             <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
                 <th id="nav01"> <a href="../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
-                <th id="title"> Lasagna </th> <!-- Name of recipe -->
+                <th id="title"> Spaghetti </th> <!-- Name of recipe -->
                 <th id="nav02"> <a href="../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
             </tr>
         </table>
@@ -23,7 +23,7 @@
                     <br> <!-- Spacing for looks -->
                     <br> <!-- Spacing for looks -->
                     <br> <!-- Spacing for looks -->
-                    <h1> Best Homemade Lasagna by Erfan Darehshoori </h1> <!-- Name of recipe -->
+                    <h1> Best Homemade Spaghetti by Erfan Darehshoori </h1> <!-- Name of recipe -->
                 </td>
             </tr>
             
@@ -31,55 +31,37 @@
                 <td>
                     <h2>Ingredients</h2>
                     <ul style="text-align: left;">
-                        <li> 1 pound sweet Italian sausage </li>
-                        <li> 3/4 pound lean ground beef </li>
-                        <li> 1/2 cup minced onion </li>
-                        <li> 2 cloves garlic, crushed </li>
-                        <li> 1 (28 ounce) can crushed tomatoes </li>
-                        <li> 2 (6 ounce) cans tomato paste </li>
-                        <li> 2 (6.5 ounce) cans canned tomato sauce </li>
-                        <li> 1/2 cup water </li>
+                        <li> 1 pound ground beef </li>
+                        <li> 1 onion, chopped </li>
+                        <li> 4 cloves garlic, minced </li>
+                        <li> 1 small green bell pepper, diced </li>
+                        <li> 1 (28 ounce) can diced tomatoes </li>
+                        <li> 1 (16 ounce) can tomato sauce </li>
+                        <li> 1 (6 ounce) can tomato paste </li>
+                        <li> 2 teaspoons dried oregano </li>
                         <li> 2 tablespoons white sugar </li>
-                        <li> 1 1/2 teaspoons dried basil leaves </li>
-                        <li> 1/2 teaspoon fennel seeds </li>
-                        <li> 1 teaspoon Italian seasoning </li>
-                        <li> 1 1/2 teaspoons salt, divided, or to taste </li>
-                        <li> 1/4 teaspoon ground black pepper </li>
-                        <li> 4 tablespoons chopped fresh parsley </li>
-                        <li> 12 lasagna noodles </li>
-                        <li> 16 ounces ricotta cheese </li>
-                        <li> 1 egg </li>
-                        <li> 3/4 pound mozzarella cheese, sliced </li>
-                        <li> 3/4 cup grated Parmesan cheese </li>
+                        <li> 2 teaspoons dried basil </li>
+                        <li> 1 teaspoon salt </li>
+                        <li> 1/2 teaspoon black pepper </li>
                     </ul>
                 </td>
                 <!-- Image of food here -->
-                <td> <img src="../images/Lasagna-Wide.jpg" class="picture"> </td>
+                <td> <img src="../images/Spaghetti_Wide.jpg" class="picture"> </td>
             </tr>
 
             <tr> <!-- Paragraph about the recipe -->
                 <td>
                     <h2>Instructions</h2>
                     <ol style="text-align: left;">
-                        <li> In a Dutch oven, cook sausage, ground beef, onion, and garlic over medium heat until well browned. Stir in crushed tomatoes, tomato paste, tomato sauce, and water. Season with sugar, basil, fennel seeds, Italian seasoning, 1 teaspoon salt, pepper, and 2 tablespoons parsley. Simmer, covered, for about 1 1/2 hours, stirring occasionally. </li>
-                        <li> Bring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining parsley, and 1/2 teaspoon salt. </li>
-                        <li> Preheat oven to 375 degrees F (190 degrees C). </li>
-                        <li> To assemble, spread 1 1/2 cups of meat sauce in the bottom of a 9x13-inch baking dish. Arrange 6 noodles lengthwise over meat sauce. Spread with one half of the ricotta cheese mixture. Top with a third of mozzarella cheese slices. Spoon 1 1/2 cups meat sauce over mozzarella, and sprinkle with 1/4 cup Parmesan cheese. Repeat layers, and top with remaining mozzarella and Parmesan cheese. Cover with foil: to prevent sticking, either spray foil with cooking spray, or make sure the foil does not touch the cheese. </li>
-                        <li> Bake in preheated oven for 25 minutes. Remove foil, and bake an additional 25 minutes. Cool for 15 minutes before serving. </li>
+                        <li> Combine ground beef, onion, garlic, and green pepper in a large saucepan. Cook and stir until meat is brown and vegetables are tender. Drain grease. </li>
+                        <li> Stir diced tomatoes, tomato sauce, and tomato paste into the pan. Season with oregano, basil, salt, and pepper. Simmer spaghetti sauce for 1 hour, stirring occasionally. </li>
                         <li> Enjoy </li>
                     </ol>
                 </td>
-                <td> <div id="desc"> Nutrition Facts Per Serving: 448 calories; protein 29.7g; carbohydrates 36.5g; fat 21.3g; cholesterol 81.8mg; sodium 1400.4mg. </div></td>
+                <td> <div id="desc"> Nutrition Facts Per Serving: 185 calories; protein 12.4g; carbohydrates 15g; fat 9.3g; cholesterol 34.8mg; sodium 930.8mg. </div></td>
             </tr>
         </table>
-        <script>
-            if ( window.location !== window.parent.location ) {
-                document.getElementById("title").innerHTML = "Featured Recipe";
-                document.getElementById("nav01").style.display = "none";
-                document.getElementById("nav02").style.display = "none";
-                document.getElementsByClassName("footer")[0].style.display = "none";
-            } 
-        </script>
+
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
