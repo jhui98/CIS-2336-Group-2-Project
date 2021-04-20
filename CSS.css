@@ -8,7 +8,7 @@ a, a:visited{
 }
 
 
-h1, h2{
+h1, h2, h3, h4{
     text-shadow: 0 0 10px black;
 }
 
@@ -85,6 +85,12 @@ iframe{
     margin: auto auto 2% auto;
 }
 
+#members_gallery2{
+    text-align: center;
+    table-layout: fixed;
+    margin: 0 auto 2% auto;
+}
+
 .member{
     height: 250;
     width: 250;
@@ -97,8 +103,17 @@ iframe{
     margin-top: 5%;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:1%
+}
+.home_gallery2{
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 0%;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom:2%
 }
+
 
 .gallery{
     text-align: center;

@@ -1,0 +1,81 @@
+<!-- Do not edit for your personal page, just copy and add your stuff in another file -->
+<!-- This is going to be for everyones personal recipie page -->
+
+<html>
+    <title> Taco Soups </title> <!-- Update with your recipe name -->
+    <head>
+        <link rel="stylesheet" href="../CSS.css">
+    </head>
+    <body>
+        <table class="header"> <!-- Header table so that we can reuse this -->
+            <tr> <!-- Potentially reuse this row for other pages, and reuse CSS -->
+                <th id="nav01"> <a href="../homepage.html"> Homepage </a>  </th> <!-- figure out what nav buttons we want -->
+                <th id="title"> Taco Soup </th> <!-- Name of recipe -->
+                <th id="nav02"> <a href="../recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
+            </tr>
+        </table>
+        
+        <table class="t01">
+            <tr> <!-- Recipe Title-->
+                <td>
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <br> <!-- Spacing for looks -->
+                    <h1> Taco Soup By Timothy Carroll</h1> <!-- Name of recipe -->
+                </td>
+            </tr>
+            
+            <tr> <!-- Recipe Instructions and Image-->
+                <td>
+                    <h2>Ingredients</h2>
+                    <ul style="text-align: left;">
+                        <li> 2 pounds ground beef </li>
+                        <li> 1 envelope taco seasoning </li>
+                        <li> 1 can (16 ounces) mild chili beans, undrained </li>
+                        <li> 1 can (15-1/4 ounces) whole kernel corn, drained </li>
+                        <li> 1 can (15 ounces) pinto beans, rinsed and drained </li>
+                        <li> 1 can (10 ounces) diced tomato with green chiles </li>
+                        <li> 1 envelope ranch salad dressing mix </li>
+                    </ul>
+                </td>
+                <!-- Image of food here -->
+                <td> <img src="../images/tacosoup_template.jpg" class="picture"> </td>
+            </tr>
+
+            <tr> <!-- Paragraph about the recipe -->
+                <td>
+                    <h2>Instructions</h2>
+                    <ol style="text-align: left;">
+                        <li> Cook ground beef in a large pot along with chopped onion, crumbling and stirring occasionally until browned and adding jalapeno and garlic during last few minutes of browning. </li>
+                        <li> Stir in tomatoes with chiles, beef broth, tomato sauce, chili powder, cumin, paprika, oregano, ranch dressing mix and season with salt and pepper to tastes. </li>
+                        <li> Cover pot with lid and simmer 30 minutes, stirring occasionally. </li>
+                        <li> Add in corn, black beans and pinto beans and cook until heated through. </li>
+                        <li> Add 1/2 cup water to thin soup if desired. If using cilantro and lime add it now. </li>
+                        <li> Serve warm topped with desired toppings. </li>
+                    </ol>
+                </td>
+                <td> <div id="desc">This Taco Soup recipe is a fall and winter staple! It’s an easy, protein packed soup full of zesty, crave-worthy flavor, plus it’s perfectly hearty and filling. It’s like chili’s soupier cousin and it’s loaded with all the best taco style ingredients!</div></td>
+            </tr>
+        </table>
+
+        <!-- Copy this for every page -->
+        <table class="footer">
+            <tr height=60px>
+                <td></td>
+                <td><h3><a href="../members.html">Members</a></h3></td>
+                <td><h3><a href="../references.html">References</a></h3></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
+    </body>
+</html>
