@@ -5,6 +5,8 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: static;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* Hide the images by default */
