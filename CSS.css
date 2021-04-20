@@ -146,7 +146,7 @@ iframe{
 }
 
 #myInput {
-    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fios-7-icons%2F50%2Fsearch-512.png&imgrefurl=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F172546%2Fsearch_icon&tbnid=fBhIZ_BpERXUAM&vet=12ahUKEwiepoHVzYvwAhVUbqwKHXjuCB4QMygAegUIARDWAQ..i&docid=uJNOSlfO2tZ6wM&w=512&h=512&q=search%20icon&safe=active&ved=2ahUKEwiepoHVzYvwAhVUbqwKHXjuCB4QMygAegUIARDWAQ');
+    background-image: url('/images/search.jpg');
     background-position: 10px 12px;
     background-repeat: no-repeat;
     width: 100%;
