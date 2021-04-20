@@ -2,7 +2,7 @@
 <!-- This is going to feature three or four cutouts -->
 
 <html>
-    <title> A delicious treat </title>
+    <title> Tres Leches w/ Fruit Filling </title>
     <head>
         <link rel="stylesheet" href="../CSS.css">
     </head>
@@ -83,5 +83,13 @@ Add in sugar and vanilla and whip until stiff peaks form. Spread over chilled ca
                 <td></td>
             </tr>
         </table>
+        <script>
+            if ( window.location !== window.parent.location ) {
+                document.getElementById("title").innerHTML = "Featured Recipe";
+                document.getElementById("nav01").style.display = "none";
+                document.getElementById("nav02").style.display = "none";
+                document.getElementsByClassName("footer")[0].style.display = "none";
+            } 
+        </script>
     </body>
 </html>
