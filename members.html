@@ -12,52 +12,63 @@
                 <th id="nav02"> <a href="recipe_viewer.html"> Recipe Viewer </a> </th> <!-- figure out what nav buttons we want -->
             </tr>
         </table>
-
         <table id="members_gallery">
             <tr> <!-- Members Gallery -->
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
+                
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
                 <td><img src="recipe_pages/kyle%20Cortez%20-%20Perfect%20Lasagna/kc_photo.png" class="member"></td>
-                <td><img src="images/Profile pic2.jpg" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
             </tr>
             <tr> <!-- Member Names -->
                 <td>Zachary Arroyo</td>
-                <td>Jacob Hui</td>
+                <td>Timothy Carroll</td>
+                <td>Bryan Chavarria</td>
+                <td>Ashton Chiang</td>
+                <td>David Coronado</td>
                 <td>Cesar Cortez</td>
-                <td>Kyle Cortez</td>
-                <td>Erfan Darehshoori</td>
+
+
+
             </tr>
-            <tr> <!-- Recipie Names -->
+            <tr class="hide"> <!-- Recipie Names -->
                 <td><a href="recipe_pages/ZacharyArroyo_recipe.html">Ramen w/ SPAM, Egg(s), & Toppings</a></td>
-                <td><a href="recipe_pages/JacobHui_recipe.html">Filipino Chicken Adobo</a></td>
+                <td><a href="recipe_pages/TimothyCaroll_recipe.html">Taco Soup</a></td>
+                <td><a href="recipe_pages/BryanChavarria_recipe.html">Bánh Mì</a></td>
+                <td><a href="recipe_pages/AshtonChiang_recipe.html">Chicken Fried Rice</a></td>
+                <td><a href="recipe_pages/DavidCoronado_recipe.html">Tres Leches Cake w/ Fruit Filling</a></td>
                 <td><a href="recipe_pages/CesarCortez_recipe.html">Blueberry Pancakes</a></td>
-                <td><a href="recipe_pages/kyle%20Cortez%20-%20Perfect%20Lasagna/kyle_C.html">Perfect Lasagna</a></td>
-                <td><a href="recipe_pages/Erfan_Darehshoori_recipe_page.html">Best homemade Spaghetti</a></td>
-            </tr>
-            <tr> <!-- Members Gallery -->
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-                <td><img src="http://i.imgur.com/fgQFjiC.jpg" class="member"></td>
-            </tr>
-            <tr> <!-- Member Names -->
-                <td>Name</td>
-                <td>Name</td>
-                <td>Name</td>
-                <td>Name</td>
-                <td>Name</td>
-            </tr>
-            <tr> <!-- Recipie Names -->
-                <td><a href="">Recipe Name</a></td>
-                <td><a href="">Recipe Name</a></td>
-                <td><a href="">Recipe Name</a></td>
-                <td><a href="">Recipe Name</a></td>
-                <td><a href="">Recipe Name</a></td>
             </tr>
         </table>
+        <table id="members_gallery2">
+            <tr> <!-- Members Gallery -->
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\Profile pic2.jpg" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
+                <td><img src="images\usericon.png" class="member"></td>
+            </tr>
+            <tr> <!-- Member Names -->
+                
+                <td>Kyle Cortez</td>
+                <td>Erfan Darehshoori</td>
+                <td>Hanh Dang</td>
+                <td>Daniel Hayashi</td>
+                <td>Jacob Hui</td>
+            </tr>
+            <tr class="hide"> <!-- Recipie Names -->
+                <td><a href="recipe_pages/kyle Cortez - Perfect Lasagna/kyle_C.html">Perfect Lasagna</a></td>
+                <td><a href="recipe_pages/Erfan_Darehshoori_recipe_page.html">Best Spaghetti</a></td>
+                <td><a href="recipe_pages/HanhDang_Recipe.html">Vegan Lentil Curry</a></td>
+                <td><a href="recipe_pages/DanielHayashi_recipe.html">Beef Empanadas</a></td>
+                <td><a href="recipe_pages/JacobHui_recipe.html">Filipino Chicken Adobo</a></td>
 
+            </tr>
+        </table>
+        <button class="button" onclick="hide()">Hide Recipe Names</button>
+        <button class="button" onclick="show()">Show Recipe Names</button>
         <!-- Copy this for every page -->
         <table class="footer">
             <tr height=60px>
@@ -67,5 +78,25 @@
                 <td></td>
             </tr>
         </table>
+        <script>
+            var hideC = document.getElementsByClassName("hide");
+            console.log("start");
+            for (var i=0; i < hideC.length; i++) {
+                hideC[i].style.visibility = "hidden";
+            }
+            
+            function hide(){
+                console.log("hide");
+                for (var i=0; i < hideC.length; i++) {
+                    hideC[i].style.visibility = "hidden";
+            }
+            }
+            function show(){
+                console.log("show");
+                for (var i=0; i < hideC.length; i++) {
+                    hideC[i].style.visibility = "visible";
+            }
+            }
+        </script>
     </body>
 </html>
