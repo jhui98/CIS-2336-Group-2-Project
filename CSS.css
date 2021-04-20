@@ -82,7 +82,7 @@ iframe{
 #members_gallery{
     text-align: center;
     table-layout: fixed;
-    margin: auto;
+    margin: auto auto 2% auto;
 }
 
 .member{
@@ -129,6 +129,9 @@ iframe{
     background-color: darkblue;
     border-radius:50px;
     box-shadow: 5px 5px 10px black; 
+}
+.button{
+    margin: 0 auto 0 auto;
 }
 
 #desc{
